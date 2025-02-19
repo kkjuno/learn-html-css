@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form(input 요소)</title>
+  </head>
+  <body>
+    <h1>form 관련 요소</h1>
+    <h2>input 요소</h2>
+    <!-- 한 줄 입력서식 -->
+    <form action="/">
+      <fieldset>
+        <legend>폼 서식</legend>
+        <div>
+          <label for="userName"
+            >이름
+            <input 
+            type="text" 
+            id="userName" 
+            required 
+            placeholder="예)이름을 적어주세요"
+            maxlength="5"
+            minlength="3">
+          </label>
+        </div>
+        <div>
+          <label for="userPwd"
+            >패스워드
+            <input 
+            type="password" 
+            id="userPwd" 
+            required 
+            placeholder="비밀번호를 입력해주세요"/>
+          </label>
+        </div>
+        <div>
+          <label for="iikelionSearch"
+            >검색
+            <input type="search" id="likelionSearch" />
+          </label>
+        <div>
+          <label for="userEmail"
+            >이메일
+            <input type="email" id="userEmail" required/>
+          </label>
+        </div>
+        <!-- submit은 액션에 할당되어있는 링크로 보내는 기능 -->
+        <input type="submit" value="전송" />
+        <div>
+          <label for="userPhone"
+            >연락처</label>
+            <input type="tel" id="userPhone" name="userPhone" required/>
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" name="lang" id="classHtml" value="HTML" checked/>
+          <label for="classHtml">HTML</label>
+        </div>
+        <div>
+          <input type="checkbox" name="lang" id="classCss" value="CSS" />
+          <label for="classCss">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" name="lang" id="classJs" value="JS"/>
+          <label for="classJs">JS</label>
+        </div>
+        <div>
+          <input type="radio" name="classRoom" value="classRoom1" id="classRoom1"/>
+          <label for="classRoom1">회고 1팀</label>
+        </div>
+        <div>
+          <input type="radio" name="classRoom" value="classRoom2" id="classRoom2" />
+          <label for="classRoom2">회고 2팀</label>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
